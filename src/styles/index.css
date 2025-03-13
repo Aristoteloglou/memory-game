@@ -24,10 +24,40 @@ a:hover {
 
 body {
   margin: 0;
+  color:#ffffff;
   display: flex;
   place-items: center;
+  background-color: #535bf2;
   min-width: 320px;
   min-height: 100vh;
+}
+
+.card-container{
+  display: flex;
+  gap:2rem;
+  outline: solid;
+  padding:1rem;
+  flex-wrap: wrap;
+  background-color: rgb(57, 95, 177);
+  flex-direction: row;
+  box-sizing: content-box;
+}
+.card{
+  background-color: #787ef1;
+  border-radius: 1rem;
+  box-sizing: content-box; 
+  padding:0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image{
+  box-sizing: content-box;
+  background-color: #3c43cc;
+  min-width:100%;
+  padding:0.2rem;
+  border-radius: 1rem;
 }
 
 h1 {
