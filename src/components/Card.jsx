@@ -1,14 +1,21 @@
 import image from "../assets/react.svg"
 
-function Card(){
+function Card({game}){
+    
+    
+    function handleIncreasePoints(e){
+        game.increasePoints();
+    }
 
 
     return (
-        <div className="card">
+        <div onClick={handleIncreasePoints} className="card">
             <img className="card-image" src={image} />
             <p>Ligma Figma</p>
         </div>
     )
+
+
 
 
 }
